@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/anya/navckin/workspace/tasks/lab03/lab03/solver_application/formatter_ex_lib/formatter_ex.cpp" "/home/anya/navckin/workspace/tasks/lab03/lab03/solver_application/formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o"
+  "/home/mors/morsiiik/workspace/tasks/lab03/hello_world_application/formatter_ex_lib/formatter_ex.cpp" "/home/mors/morsiiik/workspace/tasks/lab03/hello_world_application/formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,7 +16,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/anya/navckin/workspace/tasks/lab03/lab03/solver_application/formatter_ex_lib/formatter_lib/CMakeFiles/formatter.dir/DependInfo.cmake"
+  "/home/mors/morsiiik/workspace/tasks/lab03/hello_world_application/formatter_ex_lib/formatter_lib/CMakeFiles/formatter.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

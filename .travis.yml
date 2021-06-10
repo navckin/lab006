@@ -16,6 +16,9 @@ jobs:
 
 script:
 - source ./script
+- cd /home/travis/build/navckin/lab006/solver_application/_build
+- cpack -G DEB
+    
 
 addons:
   apt:
@@ -24,4 +27,15 @@ addons:
     packages:
       - cmake
       - cmake-data
+
+deploy:
+  provider: releases
+  api_key:
+  secure: "m16cGAJA12O6QedFutN3KKTP4i/vl4pyI6ZfSh/MLUIDNYkG8o0rkpyLeQPsp4Q23PlitSZxySgcS2MiLsYhppb8xu7pUfnf2cD4GXSByaB5DV4eGGW0Owkn6E2T3ykxNj8IVLaBrdHr5xQqhosNfucyzwkVwD7E4MnTy9ybmzpNAj0LFAo/twRfo0V+49I+fEE15QKHPtooxlJYFVVSrlDYyKF+BchQv8xNXucuI0+PtqChFxnByI5dNfZgt/LAxfxxasxJYVkcIT5h/VqLBhV4pjdLpd50ybDwLg/mwmc4xsKOD5jqwOal67wV4UHSC+HjJRWtoQW8aqVdKx/WywRQchWx7NxykyGptJ+UGPoiLl/Sr21+ASAnb7rYwuRcDKm+Hzjy+J/LufOupa/zO++qsZNGI5Fs/CHI4zmkh5jVOPpSLMG9th8H2LiEqo68LMKEsa+A4gkzbU3RYiaCPA19iqFExjeB3QsnAl06O4tCnyoAGxM2MEeQ/0sy5BsC2KRVRFyeJQREX2TvHVZVS5+cS166g5+TTwuaqxAeBYWkCsjuHBgT8S9Ji4pZpRcqi7vwSmOEcCXmyS1UXkF0tUd4hFZvT5PGhD8FTGKJ9FwWk7d1hST0jdrjTSv0nu8BLH4r07UYUMZUuHg2q3aXiglbU66AZDyP9OYQeoKsNZs="
+
+  file: "/home/travis/build/navckin/lab006/solver_application/_build/solver-0.1.0.0-Linux.deb"
+  skip_cleanup: true
+  on:
+    branch: homework
+
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application
+CMAKE_SOURCE_DIR = /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application
+CMAKE_BINARY_DIR = /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(CMAKE_COMMAND) -E cmake_progress_start /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application/CMakeFiles /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application/formatter_ex_lib/CMakeFiles/progress.marks
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application/CMakeFiles 0
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(CMAKE_COMMAND) -E cmake_progress_start /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application/CMakeFiles /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application/formatter_ex_lib/CMakeFiles/progress.marks
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib/clean
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib/preinstall
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib/preinstall
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 formatter_ex_lib/CMakeFiles/formatter_ex.dir/rule:
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib/CMakeFiles/formatter_ex.dir/rule
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib/CMakeFiles/formatter_ex.dir/rule
 .PHONY : formatter_ex_lib/CMakeFiles/formatter_ex.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ formatter_ex: formatter_ex_lib/CMakeFiles/formatter_ex.dir/rule
 
 # fast build rule for target.
 formatter_ex/fast:
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(MAKE) -f formatter_ex_lib/CMakeFiles/formatter_ex.dir/build.make formatter_ex_lib/CMakeFiles/formatter_ex.dir/build
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(MAKE) -f formatter_ex_lib/CMakeFiles/formatter_ex.dir/build.make formatter_ex_lib/CMakeFiles/formatter_ex.dir/build
 .PHONY : formatter_ex/fast
 
 formatter_ex.o: formatter_ex.cpp.o
@@ -131,7 +131,7 @@ formatter_ex.o: formatter_ex.cpp.o
 
 # target to build an object file
 formatter_ex.cpp.o:
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(MAKE) -f formatter_ex_lib/CMakeFiles/formatter_ex.dir/build.make formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(MAKE) -f formatter_ex_lib/CMakeFiles/formatter_ex.dir/build.make formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o
 .PHONY : formatter_ex.cpp.o
 
 formatter_ex.i: formatter_ex.cpp.i
@@ -140,7 +140,7 @@ formatter_ex.i: formatter_ex.cpp.i
 
 # target to preprocess a source file
 formatter_ex.cpp.i:
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(MAKE) -f formatter_ex_lib/CMakeFiles/formatter_ex.dir/build.make formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.i
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(MAKE) -f formatter_ex_lib/CMakeFiles/formatter_ex.dir/build.make formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.i
 .PHONY : formatter_ex.cpp.i
 
 formatter_ex.s: formatter_ex.cpp.s
@@ -149,7 +149,7 @@ formatter_ex.s: formatter_ex.cpp.s
 
 # target to generate assembly for a file
 formatter_ex.cpp.s:
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(MAKE) -f formatter_ex_lib/CMakeFiles/formatter_ex.dir/build.make formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.s
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(MAKE) -f formatter_ex_lib/CMakeFiles/formatter_ex.dir/build.make formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.s
 .PHONY : formatter_ex.cpp.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

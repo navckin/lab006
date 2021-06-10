@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anya/navckin/workspace/tasks/lab03/lab03/formatter_lib
+CMAKE_SOURCE_DIR = /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anya/navckin/workspace/tasks/lab03/lab03/formatter_lib
+CMAKE_BINARY_DIR = /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anya/navckin/workspace/tasks/lab03/lab03/formatter_lib/CMakeFiles /home/anya/navckin/workspace/tasks/lab03/lab03/formatter_lib/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anya/navckin/workspace/tasks/lab03/lab03/formatter_lib/CMakeFiles 0
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(CMAKE_COMMAND) -E cmake_progress_start /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application/CMakeFiles /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application/formatter_ex_lib/formatter_lib/CMakeFiles/progress.marks
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib/formatter_lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib/formatter_lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,30 +97,32 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib/formatter_lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib/formatter_lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named formatter
+# Convenience name for target.
+formatter_ex_lib/formatter_lib/CMakeFiles/formatter.dir/rule:
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(MAKE) -f CMakeFiles/Makefile2 formatter_ex_lib/formatter_lib/CMakeFiles/formatter.dir/rule
+.PHONY : formatter_ex_lib/formatter_lib/CMakeFiles/formatter.dir/rule
 
-# Build rule for target.
-formatter: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 formatter
+# Convenience name for target.
+formatter: formatter_ex_lib/formatter_lib/CMakeFiles/formatter.dir/rule
+
 .PHONY : formatter
 
 # fast build rule for target.
 formatter/fast:
-	$(MAKE) -f CMakeFiles/formatter.dir/build.make CMakeFiles/formatter.dir/build
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(MAKE) -f formatter_ex_lib/formatter_lib/CMakeFiles/formatter.dir/build.make formatter_ex_lib/formatter_lib/CMakeFiles/formatter.dir/build
 .PHONY : formatter/fast
 
 formatter.o: formatter.cpp.o
@@ -129,7 +131,7 @@ formatter.o: formatter.cpp.o
 
 # target to build an object file
 formatter.cpp.o:
-	$(MAKE) -f CMakeFiles/formatter.dir/build.make CMakeFiles/formatter.dir/formatter.cpp.o
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(MAKE) -f formatter_ex_lib/formatter_lib/CMakeFiles/formatter.dir/build.make formatter_ex_lib/formatter_lib/CMakeFiles/formatter.dir/formatter.cpp.o
 .PHONY : formatter.cpp.o
 
 formatter.i: formatter.cpp.i
@@ -138,7 +140,7 @@ formatter.i: formatter.cpp.i
 
 # target to preprocess a source file
 formatter.cpp.i:
-	$(MAKE) -f CMakeFiles/formatter.dir/build.make CMakeFiles/formatter.dir/formatter.cpp.i
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(MAKE) -f formatter_ex_lib/formatter_lib/CMakeFiles/formatter.dir/build.make formatter_ex_lib/formatter_lib/CMakeFiles/formatter.dir/formatter.cpp.i
 .PHONY : formatter.cpp.i
 
 formatter.s: formatter.cpp.s
@@ -147,7 +149,7 @@ formatter.s: formatter.cpp.s
 
 # target to generate assembly for a file
 formatter.cpp.s:
-	$(MAKE) -f CMakeFiles/formatter.dir/build.make CMakeFiles/formatter.dir/formatter.cpp.s
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(MAKE) -f formatter_ex_lib/formatter_lib/CMakeFiles/formatter.dir/build.make formatter_ex_lib/formatter_lib/CMakeFiles/formatter.dir/formatter.cpp.s
 .PHONY : formatter.cpp.s
 
 # Help Target
@@ -173,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mors/morsiiik/workspace/tasks/lab03/hello_world_application && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
